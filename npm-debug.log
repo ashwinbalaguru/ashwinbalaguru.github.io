@@ -1,0 +1,163 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'concurrently' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'concurrently', null ]
+6 verbose cache add name=undefined spec="concurrently" args=["concurrently",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'concurrently',
+7 verbose parsed url   path: 'concurrently',
+7 verbose parsed url   href: 'concurrently' }
+8 silly lockFile ca0af8a7-concurrently concurrently
+9 verbose lock concurrently /home/ashwin/.npm/ca0af8a7-concurrently.lock
+10 silly lockFile ca0af8a7-concurrently concurrently
+11 silly lockFile ca0af8a7-concurrently concurrently
+12 verbose addNamed [ 'concurrently', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile d17eab5c-concurrently concurrently@
+15 verbose lock concurrently@ /home/ashwin/.npm/d17eab5c-concurrently.lock
+16 silly addNameRange { name: 'concurrently', range: '*', hasData: false }
+17 verbose request where is /concurrently
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 20007601187adcd5
+20 verbose url raw /concurrently
+21 verbose url resolving [ 'https://registry.npmjs.org/', './concurrently' ]
+22 verbose url resolved https://registry.npmjs.org/concurrently
+23 verbose request where is https://registry.npmjs.org/concurrently
+24 info trying registry request attempt 1 at 00:20:24
+25 http GET https://registry.npmjs.org/concurrently
+26 http 200 https://registry.npmjs.org/concurrently
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"BJF6UNHX4477CEWD5T2VJL7S8"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '11746',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Tue, 13 Oct 2015 18:50:26 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-sin6923-SIN',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1444762225.934198,VS0,VE266',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'concurrently', range: '*', hasData: true }
+29 silly addNameRange versions [ 'concurrently',
+29 silly addNameRange   [ '0.0.2', '0.0.3', '0.0.4', '0.0.5', '0.1.0', '0.1.1' ] ]
+30 verbose addNamed [ 'concurrently', '0.1.1' ]
+31 verbose addNamed [ '0.1.1', '0.1.1' ]
+32 silly lockFile c8f7f0e7-concurrently-0-1-1 concurrently@0.1.1
+33 verbose lock concurrently@0.1.1 /home/ashwin/.npm/c8f7f0e7-concurrently-0-1-1.lock
+34 silly lockFile 35157292-currently-concurrently-0-1-1-tgz https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz
+35 verbose lock https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz /home/ashwin/.npm/35157292-currently-concurrently-0-1-1-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz',
+36 verbose addRemoteTarball   '0cf319104c6421c49485d42293c1f89cb22eae73' ]
+37 info retry fetch attempt 1 at 00:20:26
+38 verbose fetch to= /tmp/npm-19377-pZBJxzTz/registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz
+39 http GET https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz
+40 http 200 https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz
+41 silly lockFile 35157292-currently-concurrently-0-1-1-tgz https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz
+42 silly lockFile 35157292-currently-concurrently-0-1-1-tgz https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz
+43 silly lockFile c8f7f0e7-concurrently-0-1-1 concurrently@0.1.1
+44 silly lockFile c8f7f0e7-concurrently-0-1-1 concurrently@0.1.1
+45 silly lockFile d17eab5c-concurrently concurrently@
+46 silly lockFile d17eab5c-concurrently concurrently@
+47 silly resolved [ { name: 'concurrently',
+47 silly resolved     version: '0.1.1',
+47 silly resolved     description: 'Run commands concurrently',
+47 silly resolved     main: 'src/main.js',
+47 silly resolved     bin: { concurrent: './src/main.js' },
+47 silly resolved     scripts: { test: 'mocha' },
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'https://github.com/kimmobrunfeldt/concurrently.git' },
+47 silly resolved     keywords:
+47 silly resolved      [ 'bash',
+47 silly resolved        'concurrent',
+47 silly resolved        'parallel',
+47 silly resolved        'concurrently',
+47 silly resolved        'command',
+47 silly resolved        'sh' ],
+47 silly resolved     author: { name: 'Kimmo Brunfeldt' },
+47 silly resolved     license: 'MIT',
+47 silly resolved     bugs: { url: 'https://github.com/kimmobrunfeldt/concurrently/issues' },
+47 silly resolved     homepage: 'https://github.com/kimmobrunfeldt/concurrently',
+47 silly resolved     dependencies:
+47 silly resolved      { bluebird: '2.9.6',
+47 silly resolved        chalk: '0.5.1',
+47 silly resolved        commander: '2.6.0',
+47 silly resolved        'cross-spawn': '^0.2.9',
+47 silly resolved        lodash: '3.1.0',
+47 silly resolved        rx: '2.3.24' },
+47 silly resolved     devDependencies:
+47 silly resolved      { chai: '^1.10.0',
+47 silly resolved        mocha: '^2.1.0',
+47 silly resolved        mustache: '^1.0.0',
+47 silly resolved        semver: '^4.2.0',
+47 silly resolved        'shell-quote': '^1.4.3',
+47 silly resolved        shelljs: '^0.3.0',
+47 silly resolved        string: '^3.0.0' },
+47 silly resolved     _id: 'concurrently@0.1.1',
+47 silly resolved     _shasum: '0cf319104c6421c49485d42293c1f89cb22eae73',
+47 silly resolved     _from: 'concurrently@',
+47 silly resolved     _npmVersion: '1.4.9',
+47 silly resolved     _npmUser: { name: 'kimmobrunfeldt', email: 'kimmo.brunfeldt@gmail.com' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     dist:
+47 silly resolved      { shasum: '0cf319104c6421c49485d42293c1f89cb22eae73',
+47 silly resolved        tarball: 'http://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/concurrently/-/concurrently-0.1.1.tgz' } ]
+48 info install concurrently@0.1.1 into /usr/lib
+49 info installOne concurrently@0.1.1
+50 verbose lib/node_modules/concurrently unbuild
+51 verbose tar unpack /home/ashwin/.npm/concurrently/0.1.1/package.tgz
+52 silly lockFile 876f5489-sr-lib-node-modules-concurrently tar:///usr/lib/node_modules/concurrently
+53 verbose lock tar:///usr/lib/node_modules/concurrently /home/ashwin/.npm/876f5489-sr-lib-node-modules-concurrently.lock
+54 silly lockFile bb8889c8-m-concurrently-0-1-1-package-tgz tar:///home/ashwin/.npm/concurrently/0.1.1/package.tgz
+55 verbose lock tar:///home/ashwin/.npm/concurrently/0.1.1/package.tgz /home/ashwin/.npm/bb8889c8-m-concurrently-0-1-1-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/concurrently'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/concurrently']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/concurrently',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/concurrently',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:108:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.13.0-62-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "concurrently"
+61 error cwd /home/ashwin/usa_dissertation
+62 error node -v v0.10.37
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/concurrently
+65 error fstream_path /usr/lib/node_modules/concurrently
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/concurrently'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:108:15)
+72 verbose exit [ 3, true ]
